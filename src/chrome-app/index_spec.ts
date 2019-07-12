@@ -9,6 +9,6 @@ describe("chrome-app", () => {
     const runner = new SchematicTestRunner("schematics", collectionPath);
     const tree = runner.runSchematic("chrome-app", {}, Tree.empty());
 
-    expect(tree.files).toEqual([]);
+    expect(tree.files.length).toEqual(2);
   });
 });

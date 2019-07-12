@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "chrome-app",
+  "title": "Chrome App schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of your chrome app",
+      "x-propmt": "Enter name of your app"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

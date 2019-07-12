@@ -3,7 +3,12 @@
   "schematics": {
     "chrome-app": {
       "description": "Generate a chrome-app",
-      "factory": "./chrome-app/index#chromeApp"
+      "factory": "./chrome-app/index#chromeApp",
+      "schema": "./chrome-app/schema.json"
+    },
+    "ng-add": {
+      "description": "Add SchematicStarter to an application.",
+      "factory": "./schematic-starter/index#schematicStarter"
     }
   }
 }
