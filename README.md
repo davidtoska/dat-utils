@@ -1,6 +1,6 @@
 # Schematics for generating boilerplate
 
-To publish, simply do:
+sdfTo publish, simply do:
 
 ```bash
 npm run build
