@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "dt-utils": {
+      "description": "A blank schematic.",
+      "factory": "./dt-utils/index#dtUtils"
+    }
+  }
+}
