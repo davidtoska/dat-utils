@@ -25,5 +25,8 @@
     "jasmine": "^3.3.1",
     "rimraf": "^2.6.3",
     "typescript": "~3.4.3"
+  },
+  "devDependencies": {
+    "@types/chrome-apps": "0.0.8"
   }
 }

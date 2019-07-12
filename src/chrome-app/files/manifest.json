@@ -1,3 +1,26 @@
 {
-  "version": 2
+  "manifest_version": 2,
+  "name": "enkeltv.no",
+  "version": "0.0.0.4",
+  "minimum_chrome_version": "23",
+  "icons": {
+    "16": "./icons/icon16.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["./main.js"]
+    }
+  },
+  "permissions": [
+    "identity",
+    "webview",
+    "<all_urls>",
+    "power",
+    "storage",
+    "videoCapture",
+    "geolocation",
+    "pointerLock",
+    "system.display"
+  ],
+  "kiosk_enabled": true
 }
