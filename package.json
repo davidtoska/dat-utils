@@ -1,16 +1,17 @@
 {
-  "name": "dt-utils",
+  "name": "dat-utils",
   "version": "0.0.0",
   "description": "Utility schematics for david",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rimraf src/**/*.d.ts src/**/*.js src/**/*.js.map",
-    "test": "npm run build && jasmine src/**/*_spec.js && npm run clean"
+    "test": "npm run build && jasmine src/**/*_spec.js && npm run clean",
+    "publish": "npm run build && npm publish"
   },
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "author": "david toska",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
