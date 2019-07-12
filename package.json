@@ -1,10 +1,11 @@
 {
   "name": "dt-utils",
   "version": "0.0.0",
-  "description": "A blank schematics",
+  "description": "Utility schematics for david",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine src/**/*_spec.js"
+    "clean": "rimraf src/**/*.d.ts src/**/*.js src/**/*.js.map",
+    "test": "npm run build && jasmine src/**/*_spec.js && npm run clean"
   },
   "keywords": [
     "schematics"
