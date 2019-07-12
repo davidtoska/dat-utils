@@ -5,11 +5,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "npm run build && schematics .:chrome-app",
-    "dev:nodry": "npm run build && schematics .:chrome-app --debug=false",
+    "dev:nodry": "npm run clean && npm run build && schematics .:chrome-app --debug=false",
     "clean": "npm run clean:chrome-app",
     "clean:chrome-app": "rimraf src/chrome-app/*.d.ts src/chrome-app/*.js src/chrome-app/*.js.map dist",
     "test": "npm run build && jasmine src/**/*_spec.js && npm run clean",
-    "deploy": "npm run build && npm publish"
+    "deploy": "npm run build && npm publish",
+    "chrome": "start chrome --load-and-launch-app=C:\\Users\\david\\nx\\dt-utils\\dist"
   },
   "keywords": [
     "schematics"
