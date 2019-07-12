@@ -1,6 +1,6 @@
 {
   "name": "dat-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utility schematics for david",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -9,7 +9,7 @@
     "clean": "npm run clean:chrome-app",
     "clean:chrome-app": "rimraf src/chrome-app/*.d.ts src/chrome-app/*.js src/chrome-app/*.js.map dist",
     "test": "npm run build && jasmine src/**/*_spec.js && npm run clean",
-    "deploy": "npm run build && npm publish",
+    "deploy": "npm run clean && npm run build && npm publish",
     "chrome": "start chrome --load-and-launch-app=C:\\Users\\david\\nx\\dt-utils\\dist"
   },
   "keywords": [
